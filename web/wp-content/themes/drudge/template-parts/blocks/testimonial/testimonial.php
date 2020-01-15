@@ -25,16 +25,15 @@ if( !empty($block['align']) ) {
 }
 
 // Load values and assign defaults.
-$text = get_field('name') ?: 'Author Name';
-$author = get_field('testimonial') ?: 'Testimonial ... ';
-$image = get_field('image') ?: 295;
+$author = get_field('name') ?: 'Author Name';
+$text = get_field('testimonial') ?: 'Testimonial';
+$image = get_field('image')['ID'] ?: '19';
 
 ?>
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> testimonial">
     <blockquote class="testimonial-blockquote">
-        <span class="testimonial-text"><?php echo $text; ?></span>
-        <span class="testimonial-author"><?php echo $author; ?></span>
-        <span class="testimonial-role"><?php echo $role; ?></span>
+        <div class="testimonial-text"><?php echo $text; ?></div>
+        <footer class="testimonial-author"><?php echo $author; ?></footer>
     </blockquote>
     <div class="testimonial-image">
         <?php echo wp_get_attachment_image( $image, 'full' ); ?>
