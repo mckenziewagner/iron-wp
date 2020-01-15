@@ -1,0 +1,6 @@
+name: iron-wp
+recipe: pantheon
+config:
+  framework: wordpress
+  site: iron-wp
+  id: b3945ea7-2c7a-4025-aed8-72e4398914c3
