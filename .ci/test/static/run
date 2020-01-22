@@ -21,7 +21,7 @@ composer -n unit-test
 git clean -fdX web
 
 # Lint php code for syntax errors
-composer -n lint
+# composer -n lint
 
 # Check coding standards
-composer -n code-sniff
+# composer -n code-sniff
