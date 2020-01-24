@@ -1,0 +1,47 @@
+:root {
+  /* default small container width */
+  --container-width-sm: 960px;
+}
+
+/* break down container width */
+@screen sm {
+  :root {
+    --container-width: theme('screens.sm');
+    --container-width-sm: theme('screens.sm');
+  }
+}
+
+@screen md {
+  :root {
+    --container-width: theme('screens.md');
+    --container-width-sm: theme('screens.md');
+  }
+}
+
+@screen lg {
+  :root {
+    --container-width: theme('screens.lg');
+  }
+}
+
+@screen xl {
+  :root {
+    --container-width: theme('screens.xl');
+  }
+}
+
+.container,
+.container-sm {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  width: var(--container-width);
+}
+
+.container-sm {
+  width: var(--container-width-sm);
+}
