@@ -3772,12 +3772,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "e9ebf5253a3e6dd3cc4b584ce54b1f4c34fcb1f3"
+                "reference": "dceec07328401de6211037abbb18bda423677e26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/e9ebf5253a3e6dd3cc4b584ce54b1f4c34fcb1f3",
-                "reference": "e9ebf5253a3e6dd3cc4b584ce54b1f4c34fcb1f3",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/dceec07328401de6211037abbb18bda423677e26",
+                "reference": "dceec07328401de6211037abbb18bda423677e26",
                 "shasum": ""
             },
             "require": {
@@ -3815,7 +3815,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2020-01-27T21:43:45+00:00"
+            "time": "2020-01-30T22:20:29+00:00"
         },
         {
             "name": "symfony/browser-kit",
