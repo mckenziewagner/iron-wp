@@ -1,0 +1,25 @@
+{# navigation component #}
+{% set secondary_menu = null %}
+{% set image = 'https://via.placeholder.com/120x60' %}
+
+<header class="navigation" role="navigation">
+  <div class="navigation-container">
+    <div class="logo">
+      <img src="{{ image }}" alt="">
+    </div>
+    <nav class="primary-menu">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+    </nav>
+    {% if secondary_menu is iterable %}
+      <nav class="secondary-menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+      </nav>
+    {% endif %}
+  </div>
+</header>

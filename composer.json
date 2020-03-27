@@ -38,6 +38,7 @@
     "pantheon-systems/wordpress-composer": "*",
     "roots/wp-password-bcrypt": "^1.0.0",
     "rvtraveller/qs-composer-installer": "^1.1",
+    "stoutlogic/acf-builder": "dev-master",
     "vlucas/phpdotenv": "^2.2.0",
     "wpackagist-plugin/lh-hsts": "^1.24",
     "wpackagist-plugin/pantheon-advanced-page-cache": ">=0.3.0",

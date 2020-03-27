@@ -1,19 +1,16 @@
 {
+  "name": "drudge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development concurrently \"postcss styles/main.css -o build/out.css --watch\"  \"live-server --proxy iron-wp.lndo.site\"",
-    "build": "cross-env NODE_ENV=development postcss styles/main.css -o build/out.css",
-    "build:production": "cross-env NODE_ENV=production postcss styles/main.css -o build/out.css"
+    "dev": "fractal start --sync",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^1.1"
-  },
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.0.5",
-    "concurrently": "^5.0.2",
-    "postcss-preset-env": "^6.7.0",
-    "cross-env": "^6.0.3",
-    "cssnano": "^4.1.10",
-    "live-server": "^1.2.1",
-    "postcss-cli": "^7.1.0"
+    "@frctl/fractal": "^1.2.1",
+    "@frctl/twig": "^1.1.0"
   }
 }
