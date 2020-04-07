@@ -15,4 +15,3 @@ fractal.docs.set('path', __dirname + '/src/docs');
 const twigAdapter = require('@frctl/twig')();
 fractal.components.engine(twigAdapter);
 fractal.components.set('ext', '.twig');
-
