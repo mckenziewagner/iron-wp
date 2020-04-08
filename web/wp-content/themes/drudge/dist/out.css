@@ -1,0 +1,1 @@
+:root{--red:red}.body{color:red;color:var(--red)}

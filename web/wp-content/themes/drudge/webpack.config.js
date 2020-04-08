@@ -1,12 +1,24 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './scripts/index.js',
+  mode: 'development',
   output: {
     filename: 'out.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  plugins: [new MiniCssExtractPlugin()],
+  devServer: {
+    proxy: {
+      target: 'https://iron-wp.lndo.site',
+      secure: false,
+    },
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'out.css',
+    }),
+  ],
   module: {
     rules: [
       {
@@ -21,11 +33,13 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        include: path.resolve(__dirname, 'styles/main.css'),
         use: [
-          MiniCssExtractPlugin.loader,
-          'style-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
           { loader: 'css-loader', options: { importLoaders: 1 } },
-          'postcss-loader'
+          'postcss-loader',
         ]
       },
     ]
