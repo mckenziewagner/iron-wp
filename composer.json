@@ -40,6 +40,7 @@
     "rvtraveller/qs-composer-installer": "^1.1",
     "stoutlogic/acf-builder": "dev-master",
     "vlucas/phpdotenv": "^2.2.0",
+    "wpackagist-plugin/classic-editor": "dev-trunk",
     "wpackagist-plugin/lh-hsts": "^1.24",
     "wpackagist-plugin/pantheon-advanced-page-cache": ">=0.3.0",
     "wpackagist-plugin/timber-library": "dev-trunk",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f014127931e4955295fe2aaced354ed",
+    "content-hash": "eeefa086d46319f67f93d7e3a569d002",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -675,6 +675,25 @@
                 "environment"
             ],
             "time": "2019-01-29T11:11:52+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.zip?timestamp=1586194021"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/",
+            "time": "2020-04-06T17:27:01+00:00"
         },
         {
             "name": "wpackagist-plugin/lh-hsts",
@@ -5345,6 +5364,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "stoutlogic/acf-builder": 20,
+        "wpackagist-plugin/classic-editor": 20,
         "wpackagist-plugin/timber-library": 20,
         "roave/security-advisories": 20
     },
