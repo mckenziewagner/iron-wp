@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: './scripts/index.js',
@@ -8,16 +9,30 @@ module.exports = {
     filename: 'out.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  devServer: {
-    proxy: {
-      target: 'https://iron-wp.lndo.site',
-      secure: false,
-    },
-  },
+  // devServer: {
+  //   proxy: {
+  //     '*': {
+  //       target: 'http://dev-iron-wp.pantheonsite.io',
+  //       secure: false,
+  //       logLevel: 'debug',
+  //     },
+  //   },
+  // },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'out.css',
     }),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 8000,
+      proxy: 'https://iron-wp.lndo.site',
+      files: [
+        './styles/**/*',
+        './scripts/**/*',
+        './templates/**/*',
+        './*.php',
+      ],
+    })
   ],
   module: {
     rules: [
