@@ -1,1 +1,1 @@
-:root{--red:green}.body,.text-red{color:green;color:var(--red)}
+.body,.text-red{color:green}.nav{width:100%}

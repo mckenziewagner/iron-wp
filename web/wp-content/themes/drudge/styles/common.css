@@ -1,0 +1,9 @@
+:root {
+  --red: green;
+}
+
+.body {
+  color: var(--red);
+}
+
+.text-red {color: var(--red)}
