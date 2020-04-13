@@ -11,10 +11,6 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@frctl/fractal": "^1.2.1",
-    "@frctl/twig": "^1.1.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
@@ -24,6 +20,7 @@
     "css-loader": "^3.5.1",
     "cssnano": "^4.1.10",
     "mini-css-extract-plugin": "^0.9.0",
+    "postcss-easy-import": "^3.0.0",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",

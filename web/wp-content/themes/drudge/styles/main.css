@@ -1,9 +1,2 @@
-:root {
-  --red: green;
-}
-
-.body {
-  color: var(--red);
-}
-
-.text-red {color: var(--red)}
+@import './common.css';
+@import '../templates/components/**/*.css';
