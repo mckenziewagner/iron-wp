@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eeefa086d46319f67f93d7e3a569d002",
+    "content-hash": "0a4cdd09279de8ef45b581eef96728d2",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -313,6 +313,30 @@
                 "wordpress"
             ],
             "time": "2015-06-11T15:15:30+00:00"
+        },
+        {
+            "name": "mckenziewagner/drudge",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mckenziewagner/drudge.git",
+                "reference": "790d44bef875b70e9b07e8d8f2a38606894fb714"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mckenziewagner/drudge/zipball/790d44bef875b70e9b07e8d8f2a38606894fb714",
+                "reference": "790d44bef875b70e9b07e8d8f2a38606894fb714",
+                "shasum": ""
+            },
+            "type": "wordpress-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "cwahlfeldt",
+                    "email": "chriswahlfeldt@gmail.com"
+                }
+            ],
+            "time": "2020-04-13T20:07:07+00:00"
         },
         {
             "name": "pantheon-systems/quicksilver-pushback",
@@ -5363,6 +5387,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "mckenziewagner/drudge": 20,
         "stoutlogic/acf-builder": 20,
         "wpackagist-plugin/classic-editor": 20,
         "wpackagist-plugin/timber-library": 20,

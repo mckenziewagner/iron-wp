@@ -1,0 +1,12 @@
+{
+    "name": "mckenziewagner/drudge",
+    "type": "wordpress-theme",
+    "authors": [
+        {
+            "name": "cwahlfeldt",
+            "email": "chriswahlfeldt@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
