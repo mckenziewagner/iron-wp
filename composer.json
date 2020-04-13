@@ -105,6 +105,7 @@
     ],
     "post-update-cmd": [
       "@cleanup",
+      "@remove-git-submodules",
       "WordPressProject\\composer\\ScriptHandler::createRequiredFiles"
     ],
     "post-create-project-cmd": [
