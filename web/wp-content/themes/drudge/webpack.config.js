@@ -9,15 +9,6 @@ module.exports = {
     filename: 'out.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  // devServer: {
-  //   proxy: {
-  //     '*': {
-  //       target: 'http://dev-iron-wp.pantheonsite.io',
-  //       secure: false,
-  //       logLevel: 'debug',
-  //     },
-  //   },
-  // },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'out.css',
@@ -29,7 +20,7 @@ module.exports = {
       files: [
         './styles/**/*',
         './scripts/**/*',
-        './templates/**/*',
+        './views/**/*',
         './*.php',
       ],
     })
